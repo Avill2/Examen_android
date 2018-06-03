@@ -20,7 +20,9 @@
         <activity android:name=".Factory" />
         <activity android:name=".crear_conductorActivity" />
         <activity android:name=".Listar_conductoresActivity" />
-        <activity android:name=".DetalleActivity"></activity>
+        <activity android:name=".DetalleActivity" />
+        <activity android:name=".AutoParcelable" />
+        <activity android:name=".ConductorParcelable"></activity>
     </application>
 
 </manifest>
