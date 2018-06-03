@@ -1,5 +1,6 @@
 package com.example.andreavillacis.examen_android
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -21,7 +22,11 @@ class crear_conductorActivity : AppCompatActivity() {
         val numeroauto = editText_numeroautos.text.toString()
         val licenciavalida = editText_licencia_valida.text.toString()
         Factory.conductor_per.add(conductor(nombre,apellido,fechanacimiento,numeroauto,licenciavalida))
-        //irActividadListar()
+        irActividadListar()
+    }
+    fun irActividadListar(){
+        val intent =Intent(this, Listar_conductoresActivity::class.java)
+        startActivity(intent)
     }
 
 
