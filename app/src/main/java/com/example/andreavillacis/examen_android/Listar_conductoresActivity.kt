@@ -7,6 +7,7 @@ import android.support.v4.content.ContextCompat
 import android.support.v7.widget.DefaultItemAnimator
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -60,6 +61,25 @@ class conductor (var nombre:String,
 
 class conductorAdaptador(private val listaConductor: List<conductor>):RecyclerView.Adapter<conductorAdaptador.MyViewHolder> (){
 
+   /* override fun onMenuItemClick(item: menu): Boolean {
+        when (item.getItemId()) {
+            R.id.menu_editar_item -> {
+                Log.i("menu", "Editar")
+                return true
+            }
+            R.id.menu_eliminar_item -> {
+                Log.i("menu", "Eliminar")
+                return true
+            }
+            R.id.menu_correo_item -> {
+                Log.i("menu", "Correo")
+                return true
+            }
+            else -> {
+                Log.i("menu", "Todos los demas")
+                return false
+            }
+        }*/
 
     inner class MyViewHolder (view:View): RecyclerView.ViewHolder(view){
         var nombre: TextView
@@ -81,7 +101,6 @@ class conductorAdaptador(private val listaConductor: List<conductor>):RecyclerVi
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         val conductor =listaConductor[position]
         holder.nombre.setText(conductor.nombre)
         holder.apellido.setText(conductor.apellido)
@@ -96,12 +115,10 @@ class conductorAdaptador(private val listaConductor: List<conductor>):RecyclerVi
     }
 
     override fun getItemCount(): Int {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         return listaConductor.size
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.listar_conductores2,parent,false)
         return MyViewHolder(itemView)
     }

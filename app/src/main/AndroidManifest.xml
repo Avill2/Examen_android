@@ -22,7 +22,8 @@
         <activity android:name=".Listar_conductoresActivity" />
         <activity android:name=".DetalleActivity" />
         <activity android:name=".AutoParcelable" />
-        <activity android:name=".ConductorParcelable"></activity>
+        <activity android:name=".ConductorParcelable" />
+        <activity android:name=".detalle_AutoActivity"></activity>
     </application>
 
 </manifest>

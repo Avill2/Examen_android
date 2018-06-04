@@ -78,19 +78,18 @@ class AutoAdaptador(private val listaAutos: List<Auto>): RecyclerView.Adapter<Au
         val muchosautos = listaAutos[position]
         holder.nombremodelo.setText(muchosautos.nombreModelo)
         holder.nombremarca.setText(muchosautos.nombreMarca)
-        holder.Anio.setText(muchosautos.anio)
+        val anios=muchosautos.anio.toString()
+        holder.Anio.setText(anios)
         holder.botonDetalle.setBackgroundColor(Color.GRAY)
 
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
     override fun getItemCount(): Int {
         return listaAutos.size
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder  {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.listar_conductores2,parent,false)
         return MyViewHolder(itemView)
     }

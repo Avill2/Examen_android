@@ -7,7 +7,7 @@
     <RelativeLayout
         android:id="@+id/relative_layout"
         android:layout_width="388dp"
-        android:layout_height="172dp">
+        android:layout_height="154dp">
 
         <TextView
             android:id="@+id/text_apellido"
