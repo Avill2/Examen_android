@@ -3,6 +3,8 @@ package com.example.andreavillacis.examen_android
 import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.widget.DefaultItemAnimator
+import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -11,22 +13,31 @@ import android.widget.Button
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_detalle.*
 import java.util.*
+import kotlin.collections.ArrayList
 
 class DetalleActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        var autos= ArrayList<Auto>()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detalle)
 
-        text_nombre.text=getIntent().getExtras().getString("nombre")
+        val layoutManager = LinearLayoutManager(this)
+        autos= FactoryAuto.auto
+        val adaptador2 = AutoAdaptador(autos)
+        recycler_detalle.layoutManager=layoutManager
+        recycler_detalle.itemAnimator=DefaultItemAnimator()
+        recycler_detalle.adapter=adaptador2
+        adaptador2.notifyDataSetChanged()
+
+
+       /* text_nombre.text=getIntent().getExtras().getString("nombre")
         text_apellido.text=getIntent().getExtras().getString("apellido")
         text_fecha_nacimiento.text=getIntent().getExtras().getString("fecha")
         text_numero_autos.text=getIntent().getExtras().getString("autos")
-        text_licencia.text=getIntent().getExtras().getString("licencia")
+        text_licencia.text=getIntent().getExtras().getString("licencia")*/
     }
-}
-
-class Auto(var chasis:Int,
+}class Auto(var chasis:Int,
            var nombreMarca:String,
            var colorUno:String,
            var colorDos:String,

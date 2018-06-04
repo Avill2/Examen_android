@@ -33,7 +33,8 @@
             android:layout_alignParentTop="true"
             android:layout_marginStart="17dp"
             android:layout_marginTop="17dp"
-            android:text="Nombre" />
+            android:text="Nombre"
+            tools:text="@string/nombre_detalle" />
 
         <TextView
             android:id="@+id/textView10"
@@ -42,7 +43,8 @@
             android:layout_alignParentTop="true"
             android:layout_alignStart="@+id/textView9"
             android:layout_marginTop="57dp"
-            android:text="Apellido" />
+            android:text="Apellido"
+            tools:text="@string/apellido_detalle" />
 
         <TextView
             android:id="@+id/textView11"
@@ -50,7 +52,8 @@
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/textView9"
             android:layout_centerVertical="true"
-            android:text="Fecha de nacimiento" />
+            android:text="Fecha de nacimiento"
+            tools:text="@string/fecha_detalle" />
 
         <TextView
             android:id="@+id/textView12"
@@ -59,7 +62,8 @@
             android:layout_alignParentBottom="true"
             android:layout_alignStart="@+id/textView9"
             android:layout_marginBottom="55dp"
-            android:text="Numero de autos" />
+            android:text="Numero de autos"
+            tools:text="@string/numero_detalle" />
 
         <TextView
             android:id="@+id/textView13"
@@ -68,7 +72,8 @@
             android:layout_alignParentBottom="true"
             android:layout_alignStart="@+id/textView9"
             android:layout_marginBottom="19dp"
-            android:text="Licencia valida" />
+            android:text="Licencia valida"
+            tools:text="@string/licencia_detalle" />
 
         <TextView
             android:id="@+id/text_nombre"
@@ -119,6 +124,14 @@
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:layout_marginEnd="19dp"
-            android:text="Nuevo" />
+            android:text="Nuevo"
+            tools:text="@string/btn_nuevo" />
     </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_detalle"
+        android:layout_width="368dp"
+        android:layout_height="236dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="267dp" />
 </android.support.constraint.ConstraintLayout>

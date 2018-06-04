@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Examen_android</string>
+    <string name="btn_listar">Listar</string>
+    <string name="btn_crear">Crear</string>
+    <string name="btn_detalle">Detalle</string>
+    <string name="btn_nuevo">Nuevo</string>
+    <string name="nombre_detalle">nombre</string>
+    <string name="apellido_detalle">apellido</string>
+    <string name="fecha_detalle">Fecha de nacimiento</string>
+    <string name="numero_detalle">numero de auto</string>
+    <string name="licencia_detalle">Licencia valida</string>
+    <string name="nombre_crear">NOMBRE</string>
+    <string name="apellido_crear">APELLIDO</string>
+    <string name="fecha_crear">FECHA DE NACIMIENTO</string>
+    <string name="numero_crear">NUMERO DE AUTOS</string>
+    <string name="licencia_crear">LICENCIA VALIDA</string>
+    <string name="bnt_crear_crear">CREAR</string>
 </resources>

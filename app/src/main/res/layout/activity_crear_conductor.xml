@@ -26,7 +26,8 @@
             android:layout_centerVertical="true"
             android:text="crear"
             tools:layout_editor_absoluteX="40dp"
-            tools:layout_editor_absoluteY="385dp" />
+            tools:layout_editor_absoluteY="385dp"
+            tools:text="@string/bnt_crear_crear" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -42,7 +43,8 @@
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/textView"
             android:layout_centerVertical="true"
-            android:text="NUMERO DE AUTOS" />
+            android:text="NUMERO DE AUTOS"
+            tools:text="@string/numero_crear" />
 
         <TextView
             android:id="@+id/textView3"
@@ -51,7 +53,8 @@
             android:layout_alignParentTop="true"
             android:layout_alignStart="@+id/textView"
             android:layout_marginTop="116dp"
-            android:text="FECHA DE NACIMIENTO" />
+            android:text="FECHA DE NACIMIENTO"
+            tools:text="@string/fecha_crear" />
 
         <TextView
             android:id="@+id/textView"
@@ -61,7 +64,8 @@
             android:layout_alignParentTop="true"
             android:layout_marginStart="19dp"
             android:layout_marginTop="22dp"
-            android:text="NOMBRE" />
+            android:text="NOMBRE"
+            tools:text="@string/nombre_crear" />
 
         <TextView
             android:id="@+id/textView2"
@@ -70,7 +74,8 @@
             android:layout_alignParentTop="true"
             android:layout_alignStart="@+id/textView"
             android:layout_marginTop="64dp"
-            android:text="APELLIDO" />
+            android:text="APELLIDO"
+            tools:text="@string/apellido_crear" />
 
         <TextView
             android:id="@+id/textView5"
@@ -79,7 +84,8 @@
             android:layout_alignParentBottom="true"
             android:layout_alignStart="@+id/textView"
             android:layout_marginBottom="106dp"
-            android:text="LICENCIA VALIDA" />
+            android:text="LICENCIA VALIDA"
+            tools:text="@string/licencia_crear" />
 
         <EditText
             android:id="@+id/editText_nombre"
