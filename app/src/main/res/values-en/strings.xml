@@ -1,18 +1,18 @@
 <resources>
     <string name="app_name">Examen_android</string>
-    <string name="btn_listar">Listar</string>
-    <string name="btn_crear">Crear</string>
-    <string name="btn_detalle">Detalle</string>
-    <string name="btn_nuevo">Nuevo</string>
-    <string name="nombre_detalle">nombre</string>
-    <string name="apellido_detalle">apellido</string>
-    <string name="fecha_detalle">Fecha de nacimiento</string>
-    <string name="numero_detalle">numero de auto</string>
-    <string name="licencia_detalle">Licencia valida</string>
-    <string name="nombre_crear">NOMBRE</string>
-    <string name="apellido_crear">APELLIDO</string>
-    <string name="fecha_crear">FECHA DE NACIMIENTO</string>
-    <string name="numero_crear">NUMERO DE AUTOS</string>
-    <string name="licencia_crear">LICENCIA VALIDA</string>
-    <string name="bnt_crear_crear">CREAR</string>
+    <string name="btn_listar">List</string>
+    <string name="btn_crear">Create</string>
+    <string name="btn_detalle">Detail</string>
+    <string name="btn_nuevo">New</string>
+    <string name="nombre_detalle">Name</string>
+    <string name="apellido_detalle">Last name</string>
+    <string name="fecha_detalle">Birthdate</string>
+    <string name="numero_detalle">number of cars</string>
+    <string name="licencia_detalle">Valid License</string>
+    <string name="nombre_crear">NAME</string>
+    <string name="apellido_crear">LAST NAME</string>
+    <string name="fecha_crear">BIRTHDATE</string>
+    <string name="numero_crear">NUMBER OF CARS</string>
+    <string name="licencia_crear">VALID LICENSE</string>
+    <string name="bnt_crear_crear">CREATE</string>
 </resources>
